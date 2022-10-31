@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "discord-bot-docker-guide"
+version = "0.1.0"
+description = "A guide on how to properly deploy discord bots using discord.py and Docker"
+authors = ["No767 <73260931+No767@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "discord_bot_docker_guide"}]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4.0"
+"discord.py" = "^2.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

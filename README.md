@@ -19,5 +19,8 @@ There are some basic best practices that should be done with Docker, and they ca
 
 - Each Docker container should run the min amount of processes needed in order to function
 - The first process that gets executed is PID1, which on most Linux systems, is `init`. PID0 halts the system, while PID1 is the first thing that gets booted. This should be an `init` manager like `tini` or `dumb-init` (discussed in more detail later)
+- Each Dockerfile should be as slim as possible. It's recommended to use `*-slim-bullseye` tags, since this will use a slimmed down version of Debian 11 as it's base. Alpine Linux is another alternative, but may cause performance issues with Python, and in effect, your bot.
 
-This will be updated later
+## How this guide is structured
+
+This guide has examples, and those examples are split into 3 main ones: Requirements, Pipenv, and Poetry. `requirements.txt` may be the most common one used, but personally I use poetry. These examples are documented, and contain almost everything needed to operate and run these bots. The bot is a basic discord.py bot with 1 cog loaded, which is a help cog. 
