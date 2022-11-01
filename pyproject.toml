@@ -4,11 +4,11 @@ version = "0.1.0"
 description = "A guide on how to properly deploy discord bots using discord.py and Docker"
 authors = ["No767 <73260931+No767@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "discord_bot_docker_guide"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
 "discord.py" = "^2.0.1"
+charset-normalizer = "^3.0.0"
 
 
 [build-system]
